@@ -21,7 +21,6 @@
   "scripts": {
     "start": "storybook dev -p 6006",
     "test": "vitest",
-    "test:ci": "vitest run",
     "coverage": "vitest run --coverage",
     "build": "tsc && vite build",
     "build:watch": "tsc && vite build --watch",

@@ -1,3 +1,20 @@
 .root {
-  background-color: red;
+  background-color: #ffa200;
+  border-radius: 8px;
+  padding: 5px 10px;
+  border: 3px dashed #bf7900;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:disabled {
+    pointer-events: none;
+  }
+
+  &:hover {
+    background-color: darken(#ffa200, 2%);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
 }

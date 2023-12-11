@@ -1,3 +1,6 @@
+/// <reference types="vitest" />
+/// <reference types="vite/client" />
+
 import dts from 'vite-plugin-dts';
 import { defineConfig } from 'vite';
 
@@ -24,5 +27,10 @@ export default defineConfig({
         },
       },
     },
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: ['./test/setup.tsx'],
   },
 });
